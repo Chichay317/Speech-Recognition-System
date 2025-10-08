@@ -19,6 +19,7 @@ e. Handles errors caused by silence, background noise, or poor network
 f. Easily extendable for new commands (e.g., open Gmail, play music, tell the timec)
 
 How it Works 
+
 a. Adjusts for ambient noise before listening 
 
 b. Listens for a short phrase from the microphone 
