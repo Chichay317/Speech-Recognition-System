@@ -1,19 +1,37 @@
 # Speech-Recognition-System
 
-This project is a simple voice-controlled assistant built with Python. It listens to voice commands through the microphone, converts speech into text using Google’s Speech Recognition API, and performs actions like opening websites. 
-It can also respond back to the user with spoken feedback using text-to-speech.
+This repository contains two complementary projects demonstrating different approaches to speech recognition using Python:
 
+1. Voice-Controlled Assistant (API-Based Speech Recognition)
+A simple interactive assistant that listens to spoken commands, converts speech to text using Google Speech Recognition API, and performs basic actions such as opening websites or responding with synthesized speech.
 Features
-1. Listens to voice commands using the system microphone
-2. Converts speech into text with Google Speech Recognition
-3. Opens websites (e.g., YouTube, Google) based on recognized commands
-4. Provides spoken responses using pyttsx3 
-5. Handles errors such as background noise, silence, or poor internet connection
-6. Easily extendable to add new commands (e.g., open Gmail, play music, tell the time)
+a. Listens to voice commands via the system microphone
+b. Converts speech to text using Google’s API
+c. Executes commands (e.g., open YouTube, Google, Gmail)
+d. Provides spoken responses with pyttsx3
+e. Handles errors caused by silence, background noise, or poor network
+f. Easily extendable for new commands (e.g., open Gmail, play music, tell the timec)
+
+How it Works 
+a. Adjusts for ambient noise before listening 
+b. Listens for a short phrase from the microphone 
+c. Sends the audio to Google for transcription 
+d. Matches the recognized text against predefined commands 
+e. Executes the corresponding action and provides spoken feedback
+
+
+2. MFCC-Based Speech Classification Model (Machine Learning Approach)
+A lightweight machine-learning speech recognition model built using MFCC (Mel-Frequency Cepstral Coefficients) features and Logistic Regression. It classifies short audio clips and evaluates how performance changes when background noise is added.
+Features
+a. Extracts MFCCs from recorded audio clips
+b. Trains a Logistic Regression model for speech classification
+c. Performs noise-robustness testing by adding random background noise
+d. Visualizes how model accuracy drops as noise increases
 
 How it Works
-1. Adjusts for ambient noise before listening
-2. Listens for a short phrase from the microphone
-3. Sends the audio to Google for transcription
-4. Matches the recognized text against predefined commands
-5. Executes the corresponding action and provides spoken feedback
+a. Load and preprocess .wav audio samples
+b. Extract 13-dimensional MFCC features from each clip
+c. Train a Logistic Regression classifier on labeled samples
+d. Evaluate accuracy and generate predictions
+e. Test model robustness under varying noise levels
+f. Plot “Accuracy vs Noise Level” to visualize performance decline
