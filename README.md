@@ -4,6 +4,7 @@ This repository contains two complementary projects demonstrating different appr
 
 1. Voice-Controlled Assistant (API-Based Speech Recognition)
 A simple interactive assistant that listens to spoken commands, converts speech to text using Google Speech Recognition API, and performs basic actions such as opening websites or responding with synthesized speech.
+
 Features
 
 a. Listens to voice commands via the system microphone
