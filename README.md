@@ -31,7 +31,6 @@ e. Executes the corresponding action and provides spoken feedback
 
 
 2. MFCC-Based Speech Classification Model (Machine Learning Approach)
-3. 
 A lightweight machine-learning speech recognition model built using MFCC (Mel-Frequency Cepstral Coefficients) features and Logistic Regression. It classifies short audio clips and evaluates how performance changes when background noise is added.
 
 Features
