@@ -3,6 +3,7 @@
 This repository contains two complementary projects demonstrating different approaches to speech recognition using Python:
 
 1. Voice-Controlled Assistant (API-Based Speech Recognition)
+   
 A simple interactive assistant that listens to spoken commands, converts speech to text using Google Speech Recognition API, and performs basic actions such as opening websites or responding with synthesized speech.
 
 Features
@@ -33,6 +34,7 @@ e. Executes the corresponding action and provides spoken feedback
 
 
 2. MFCC-Based Speech Classification Model (Machine Learning Approach)
+   
 A lightweight machine-learning speech recognition model built using MFCC (Mel-Frequency Cepstral Coefficients) features and Logistic Regression. It classifies short audio clips and evaluates how performance changes when background noise is added.
 
 Features
